@@ -25,8 +25,7 @@ export class InfoWindowComponent implements OnInit {
 
   findTurret(turretNumber){
     this.http.get('http://localhost:3000/api/turret/'+turretNumber)
-    .toPromise()
-    .then(response => this.dataBanks = response.json());
+    .subscribe(response => this.dataBanks = response.json());
 	}
 
 }

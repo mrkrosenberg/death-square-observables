@@ -2,3 +2,5 @@
 	<li>Turret {{dataBanks.turretNumber}} is functional</li>
 	<li>Damage is {{dataBanks.damage}}</li>
 </ul>
+<!-- this creates a variable ('number') from the input text and pipes it into the findTurret function -->
+<input [(ngModel)]="number" (keyup)="findTurret(number)" type="text" placeholder="Enter turret Number" />

@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TieFighterComponent } from './tie-fighter/tie-fighter.component';
 import { InfoWindowComponent } from './info-window/info-window.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TieFighterComponent,
-    InfoWindowComponent
+    InfoWindowComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
